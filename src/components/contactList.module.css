@@ -1,34 +1,53 @@
 .shadow {
-   box-shadow: 1px 1px 5px #d8d6d6,
-   -1px -1px 5px #d8d6d6;
+  box-shadow: 1px 1px 5px #d8d6d6, -1px -1px 5px #d8d6d6;
 }
 
 .contact {
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.contactsItem {
-   flex-basis: 0;
-   flex-grow: 1;
+.contactsItem:not(.contactsItem:last-child) {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-top: 1rem;
+}
+
+.contactsItem:last-child {
+  margin-top: 1rem;
 }
 
 div.contactsItem {
-   display: flex;
+  display: flex;
 }
 
 .icon {
-   padding: .25rem;
-   background-color: #fff;
-   border-radius: 50%;
-   margin-right: .5rem;
+  padding: 0.25rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
 .delete {
-   cursor: pointer;
-   transition: transform .2s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  background-color: #e56060;
+  color: #242424;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 .delete:hover {
-   transform: scale(1.3);
+  transform: scale(1.035);
+}
+
+@media screen and (min-width: 768px) {
+  .contactsItem {
+    margin-top: 0 !important;
+  }
+  .delete:hover {
+    transform: scale(1.2);
+  }
 }

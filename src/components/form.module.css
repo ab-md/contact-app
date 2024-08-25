@@ -1,0 +1,8 @@
+.form {
+    margin-top: 3rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px #e0dede,
+    -5px -5px 10px #e0dede;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+}

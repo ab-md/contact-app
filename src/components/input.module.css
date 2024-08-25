@@ -1,0 +1,10 @@
+.input {
+    box-shadow: 2px 2px 5px #e1e1e1,
+    2px 2px 5px #e1e1e1 inset;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+}
+
+.input::placeholder {
+    color: #5d5b5b;
+}
